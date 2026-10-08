@@ -1,0 +1,24 @@
+/* Sign-in screens, account button, demo banner */
+#auth[hidden],#demo-banner[hidden],#acct[hidden]{display:none!important}
+body.authing>header,body.authing>main,body.authing>footer,body.authing>nav.bt,body.authing>#demo-banner{display:none!important}
+.auth-wrap{min-height:100vh;display:grid;place-items:center;padding:24px 16px}
+.auth-card{width:100%;max-width:420px}
+.auth-brand{font:800 1.2rem "Plus Jakarta Sans","Manrope",system-ui,sans-serif;color:var(--pri);margin:0 0 4px}
+.auth-card h1{font-size:clamp(1.6rem,5vw,2rem);margin:.1em 0 .2em}
+.af{display:flex;flex-direction:column;gap:4px;margin:12px 0}
+.af label{font-weight:700;font-size:.92rem}
+.row-check{flex-direction:row;align-items:flex-start;gap:10px}
+.row-check input{width:auto;margin-top:5px;flex:none}
+.row-check label.consent{font-weight:400;font-size:.9rem}
+.auth-err{color:#b8434b;font-weight:700;min-height:1.4em;margin:6px 0}
+.auth-ok{color:var(--pri);font-weight:700;margin:8px 0 0}
+.auth-links{display:flex;flex-direction:column;gap:6px;margin:14px 0 0}
+.linkish{background:none;border:0;padding:4px 0;font:inherit;font-weight:700;color:var(--pri);text-align:left;cursor:pointer;text-decoration:underline}
+.auth-sos{margin-top:18px;padding-top:14px;border-top:2px dashed var(--line);font-size:.88rem;color:var(--mut)}
+.auth-card .b{width:100%;margin-top:6px}
+.auth-card .b:disabled{opacity:.6;cursor:wait}
+.demo-banner{background:var(--lav);color:var(--ink);text-align:center;padding:6px 12px;font-size:.88rem;font-weight:700}
+.acct{margin-left:auto;flex:none}
+@media(max-width:860px){.acct{margin-left:0}}
+.auth-card a{color:var(--pri);font-weight:700}
+@media(max-width:860px){header .hm{display:none!important}}
