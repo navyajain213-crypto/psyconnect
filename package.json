@@ -9,5 +9,10 @@
     "build": "node scripts/build.mjs",
     "test": "node tests/e2e.mjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
 }
